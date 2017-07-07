@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PhyNetLab - Physical Internet Laboratory - A research platform for Internet of Things - Industrie 4.0</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" href="font-mfizz/font-mfizz.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top"><i class="fa fa-wifi fa-rotate-270 fa-pulse"></i> PhyNetLab <i class="fa fa-wifi fa-rotate-90"></i></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#nodes">Nodes</a>
+                    </li>
+                    <!--<li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>-->
+                    <li>
+                        <a class="page-scroll" href="#portfolio">News</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="http://localhost:9000/login">Login <i class="fa fa-sign-in"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    
+    <header>
+        <div id="large-header"  class="large-header">
+            <canvas id="demo-canvas"></canvas>   
+                <h1 class="main-title">PhyNetLab</h1>
+                <a href="#features" class="btn btn-circle page-scroll sub-title">
+                    <i class="fa fa-angle-double-down animated"></i>
+                </a>
+            </div>
+    </header>
+    <div id="videodiv" class="video-container">
+            <video preload="true" autoplay="autoplay" loop="loop" volume="mute" poster="img/demo-2-bg.jpg">
+                <source src="vid/PhyNetLabHeader.webm" type="video/webm">
+                <source src="vid/PhyNetLabHeader.mp4" type="video/mp4">
+                <source src="vid/PhyNetLabHeader.ogg" type="video/ogg">
+            </video>
+    </div>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Features</h2>
+                    <h3 class="section-subheading text-muted">What is PhyNetLab?</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-flash fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Energy Neutral</h4>
+                    <p class="text-mutexed"><a href="#page-top">PhyNetLab</a> has 350 energy neutral nodes that are equipped with 1GHz band transceivers and 350 battery operated 2.4 GHz nodes. The nodes are available for experimentation with 6 programmable gateways at an industrial facility.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Remote Management</h4>
+                    <p class="text-mutexed"><a href="http://localhost:9000">The Remote Management System</a> provides multi-user management of the facility with API's to create senarios, program contexts and experiment strategies for modern IoT applications with energy as a context.</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-database fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Data-as-a-Service</h4>
+                    <p class="text-mutexed"><a href="https://en.wikipedia.org/wiki/Data_as_a_service" target="_blank">DaaS</a> provides flexibility to your Applications and makes integration seamless. All IoT applications thrive on the data therefore, it is important that to have data instantly to create applications and actively iterate experiments.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="#features" class="page-scroll btn btn-xl"><i class="fa fa-user"></i> Register Now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Nodes Section -->
+    <section id="nodes" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Nodes</h2>
+                    <h3 class="section-subheading text-muted">Nodes in the three-tier architecture of PhyNetLab, Internet of Things testbed</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/nodes/1.jpg" class="img-responsive img-circle" alt="">
+                        <h4>PhyNode v0.1</h4>
+                        <p class="text-muted">End Nodes</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#" data-toggle="tooltip" title="Energy neutral"><i class="fa fa-flash"></i></a>
+                            </li>
+                            <li><a href="#" data-toggle="tooltip" title="Available for experiment"><i class="fa fa-flask"></i></a>
+                            </li>
+                            <li><a href="#" data-toggle="tooltip" title="350x wireless nodes"><i class="fa fa-signal"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/nodes/2.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Access Points v0.0</h4>
+                        <p class="text-muted">Gateway Nodes </p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#" data-toggle="tooltip" title="Raspberry pi based"><i class="icon-raspberrypi"></i></a>
+                            </li>
+                            <li><a href="#" data-toggle="tooltip" title="Wireless data sink"><i class="icon-antenna"></i></a>
+                            </li>
+                            <li><a href="#" data-toggle="tooltip" title="6x internet connected nodes"><i class="fa fa-plug"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/nodes/3.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Servers</h4>
+                        <p class="text-muted">Internet Nodes</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#" data-toggle="tooltip" title="Remote located"><i class="fa fa-building"></i></a>
+                            </li>
+                            <li><a href="#" data-toggle="tooltip" title="RESTapi"><i class="icon-shell"></i></a>
+                            </li>
+                            <li><a href="#" data-toggle="tooltip" title="Database servers"><i class="icon-database-alt2"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="http://app.phynetlab.com/nodes" class="page-scroll btn btn-xl"><i class="fa fa-cubes"></i> Nodes</a>
+                </div>
+            </div>
+<!--            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- About Section 
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">Timeline events of PhyNetLab</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2014</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Conception of a large scale internet of things testbed with focus on energy. A testbed consisting of energy neutral devices, networked access points are to be implemented.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>December 2014</h4>
+                                    <h4 class="subheading">Design of testbed architecture</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">A three-tier architecture </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>December 2012</h4>
+                                    <h4 class="subheading">Transition to Full Service</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>July 2014</h4>
+                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Be Part
+                                    <br>Of Our
+                                    <br>Story!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">News</h2>
+                    <h3 class="section-subheading text-muted">Publications and other importants events.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Website launch</h4>
+                        <p class="text-muted">Event</p>
+                        <ul class="list-inline">  
+                            <li>Link: <a href="http://www.phynetlab.com" target="_blank">www.phynetlab.com</a></li>
+                            <li>Date: 20 August 2015</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/smartsystech2015.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>PhyNode: An intelligent, cyber-physical system with energy neutral operation for PhyNetLab</h4>
+                        <p class="text-muted">Publication</p>
+                        
+                        <ul class="list-inline">  
+                            <li>Conference: <a href="http://www.smart-systech.eu" target="_blank">Smart SysTech 2015</a></li>
+                            <li>Venue: Aachen, Germany</li>
+                            <li>Date: 17 June 2015</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/iotsos2015.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>PhyNetLab: Architecture Design of Ultra-Low Power Wireless Sensor Network Testbed</h4>
+                        <p class="text-muted">Publication</p>
+                        <ul class="list-inline">  
+                            <li>Conference: <a href="http://www.csee.umbc.edu/~nilanb/iot-sos-2015/" target="_blank">IoT - SoS</a></li>
+                            <li>Venue: Boston, USA</li>
+                            <li>Date: 14 June 2015</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--<div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Golden</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Escape</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Dreams</h4>
+                        <p class="text-muted">Website Design</p>
+                    </div>
+                </div>-->
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a href="http://blog.phynetlab.com" class="page-scroll btn btn-xl"><i class="fa fa-newspaper-o"></i> More News</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Aside -->
+    <aside class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <a href="http://www.iml.fraunhofer.de" target="_blank">
+                        <img src="img/logos/imlfhgde.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="http://flw.mb.tu-dortmund.de" target="_blank">
+                        <img src="img/logos/flwtudo.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="http://www.tu-dortmund.de" target="_blank">
+                        <img src="img/logos/tudo.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="http://www.phynetlab.com" target="_blank">
+                        <img src="img/logos/PhyNetLab.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">get in touch with us!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">PhyNetLab 2015</span>
+                </div>
+                <!--<div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>-->
+                <div class="col-md-4 pull-right">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Event</h2>
+                            <p class="item-intro text-muted">Website Launch</p>
+                            <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
+                            <ul class="list-inline">
+                                <li>Date: 20 August 2015</li>
+                                <li>Name: Website Launch</li>
+                                <li>Category: Event</li>
+                            </ul>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Publication</h2>
+                            <p class="item-intro text-muted">PhyNode: An intelligent, cyber-physical system with energy neutral operation for PhyNetLab</p>
+                            <h3>Abstract</h3>
+                            <p>This paper introduces an ultra-low power cyber- physical system with energy harvesting capabilities called the PhyNode. This hardware is used for testing and deploying low power wireless sensor networks focused on real time material handling systems. Physical Internet Laboratory (PhyNetLab) is a materials handling facility focussed on researching various use cases of Physical Internet deployments in the field of logistics. PhyNode has a TI MSP430FR5969 with a sub-1Ghz band transceiver powered with a battery and sports solar cell for energy harvesting which is the main focus of the conducted research on PhyNode. The hardware platform also has a TI CC2530 System on Chip with 2.4Ghz transceiver that supports IEEE 802.15.4, Zigbee and RF4CE applications and implements a controller network supporting experimentation with 350 nodes. This paper outlines the system description of such hardware and in addition to the system design description with testbed deployment and network implementation; a comparison between such existing platforms is also presented in this paper.</p>
+                            <p>Smart SysTech 2015, Aachen, Germany<br><a href="http://www.smart-systech.eu">www.smart-systech.eu</a></p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <!-- Project Details Go Here -->
+                            <h2>Publication</h2>
+                            <p class="item-intro text-muted">PhyNetLab: Architecture Design of Ultra-Low Power Wireless Sensor Network Testbed</p>
+                            <h3>Abstract</h3>
+                            <p>PhyNetLab is a Wireless Sensor Network (WSN) Testbed for conducting research on ultra low power electronics for WSN, energy harvesting, energy neutral devices, suitable communication protocols and software strategies focussing on im- plementations in the field of materials handling and warehousing. The interactions between machines, handling systems and storage facilities is highly physical; to facilitate such interactions of various entities a PHYsical interNET is required. Henceforth such a WSN testbed is named as PhyNetLab. This article introduces aforementioned facility and further describes its architecture design, network topology and data flow for the nodes and a facilitation tool with state of the art techniques to easily deploy, experiment and validate various test scenarios. PhyNetLab design is also intended to be a model for WSN implementation for Industry 4.0 standard.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="js/EasePack.min.js"></script>
+    <script src="js/rAF.js"></script>
+    <script src="js/demo-1.js"></script>
+    <script> $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+    });
+    </script> 
+    
+</body>
+
+</html>
